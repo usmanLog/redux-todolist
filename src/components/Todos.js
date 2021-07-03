@@ -24,11 +24,11 @@ export function Todos() {
 
 
     return (
-        <main className="h-todo w-todo bg-purple-200 rounded-lg shadow-md">
+        <main className="h-todo sm:w-todo bg-purple-200 rounded-lg shadow-md">
             <section className="w-full text-center">
-                <h1 className="text-5xl">Redux Todolist App</h1>
+                <h1 className="md:text-5xl text-3xl">Redux Todolist App</h1>
                 <form onSubmit={handleSubmit} className="w-full flex flex-row mt-9">
-                    <input onChange={({ target }) => setText(target.value)} type="text" className=" border border-black h-8 w-4/5 m-1 text-xl" />
+                    <input onChange={({ target }) => setText(target.value)} type="text" className=" border curs border-black h-8 w-4/5 m-1 text-xl" />
                     <button type="submit" className=" bg-indigo-600 text-white shadow-md w-32 h-10 text-lg hover:bg-indigo-800">Add Todo</button>
                 </form>
             </section>
